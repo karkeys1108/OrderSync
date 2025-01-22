@@ -38,7 +38,7 @@ function App() {
         />
 
         <Route
-          path="/tables"
+          path="/orders"
           element={
             <>
               <PageTitle title="Orders List " />
