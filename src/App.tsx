@@ -7,6 +7,7 @@ import SignIn from './pages/Authentication/SignIn';
 import SignUp from './pages/Authentication/SignUp';
 import Chart from './pages/Chart';
 import ECommerce from './pages/Dashboard/ECommerce';
+import Tables from './pages/Tables';
 import DefaultLayout from './layout/DefaultLayout';
 
 function App() {
@@ -35,11 +36,21 @@ function App() {
             </>
           }
         />
+
+        <Route
+          path="/tables"
+          element={
+            <>
+              <PageTitle title="Orders List " />
+              <Tables />
+            </>
+          }
+        />
         <Route
           path="/chart"
           element={
             <>
-              <PageTitle title="Analytics Chart " />
+              <PageTitle title="Analytics " />
               <Chart />
             </>
           }
